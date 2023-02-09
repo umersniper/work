@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+.row
+{
+	display: grid;
+
+}
+.c1,.c2,.c3
+{
+	background-color: red;
+}
+@media only screen and (min-width: 600px) {
+.row
+{
+		grid-template-columns: 25% 75%;
+}
+.c3
+{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+}
+@media only screen and (min-width: 768px) {
+.row
+{
+		grid-template-columns: 25%  50% 25%;
+}  
+.c3
+{
+	grid-column-start: 3;
+	grid-column-end: 4;	
+}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Chania</h1>
+</div>
+<div class="row">
+<div class="c1">25</div>
+<div class="c2">50</div>
+<div class="c3">25</div>
+</div>
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
+
